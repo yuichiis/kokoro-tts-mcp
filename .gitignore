@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Local model assets (downloaded by `kokoro-tts-mcp --download`)
+*.onnx
+*.bin
+config.json
+*.part
+
+# Generated audio
+audio.wav
+
+# Local environment / editor files
+.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

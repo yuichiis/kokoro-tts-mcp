@@ -1,0 +1,23 @@
+[project]
+name = "kokoro-tts-mcp"
+version = "0.1.0"
+description = "OpenAI TTS-compatible MCP server (stdio) powered by Kokoro ONNX"
+readme = "README.md"
+authors = [
+    { name = "Yuichi Ishikawa", email = "yuichiis@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "certifi>=2026.10.23",
+    "kokoro-onnx>=0.6.1",
+    "mcp>=2.3.0",
+    "misaki-fork[ja]>=0.9.6",
+    "soundfile>=0.14.0",
+]
+
+[project.scripts]
+kokoro-tts-mcp = "kokoro_tts_mcp.server:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
